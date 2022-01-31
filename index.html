@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #050210;
+            width: 100%;
+            width: 100vw;
+        }
+        .box{
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 35%;
+            bottom: 50%;
+            right: 50%;
+            margin: auto;
+            width: 450px;
+            height: 450px;
+            animation-name: my-animation;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+
+            background: radial-gradient(#050210 60%,#55fb9f 60%,#fb5dad,#b97aff);
+        }
+        @keyframes my-animation {
+                0% {
+            transform:rotate(0deg);
+            filter:drop-shadow(0 0 25px #55fb9f);
+            background: radial-gradient(#0a041d 60%,#55fb9f 60%,#fb5dad,#b97aff);
+                }
+                33%{
+            transform:rotate(120deg);
+            filter: drop-shadow(0 0 25px #fb5dad);
+            background: radial-gradient(#0a041f 60%,#55fb9f 60%,#fb5dad,#b97aff);
+                }
+                66%{
+            transform:rotate(240deg);
+            filter: drop-shadow(0 0 25px #b97aff);
+            background: radial-gradient(#0c0624 60%,#55fb9f 60%,#fb5dad,#b97aff);
+                }
+                100%{
+            transform:rotate(360deg);
+            filter: drop-shadow(0 0 25px #55fb9f);
+            background: radial-gradient(#0c0525 60%,#55fb9f 60%,#fb5dad,#b97aff);
+                }
+            }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
