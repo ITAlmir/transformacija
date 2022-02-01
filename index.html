@@ -10,7 +10,7 @@
             width: 100%;
             width: 100vw;
         }
-        .box{
+        .box1{
             border-radius: 50%;
             position: absolute;
             top: 50%;
@@ -20,37 +20,158 @@
             margin: auto;
             width: 450px;
             height: 450px;
-            animation-name: my-animation;
-            animation-duration: 2s;
+            animation-name: my-animation1;
+            animation-duration: 0.5s;
             animation-iteration-count: infinite;
 
-            background: radial-gradient(#050210 60%,#55fb9f 60%,#fb5dad,#b97aff);
+            background: linear-gradient( #55fb9f,#fb5dad,#b97aff,#55fb9f);
         }
-        @keyframes my-animation {
+        .box2{
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 35%;
+            bottom: 50%;
+            right: 50%;
+            margin: auto;
+            width: 450px;
+            height: 450px;
+            animation-name: my-animation2;
+            animation-duration: 0.5s;
+            animation-iteration-count: infinite;
+
+            background: linear-gradient( #55fb9f,#fb5dad,#b97aff,#55fb9f);
+        }
+        .box3{
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 35%;
+            bottom: 50%;
+            right: 50%;
+            margin: auto;
+            width: 450px;
+            height: 450px;
+            animation-name: my-animation3;
+            animation-duration: 0.5s;
+            animation-iteration-count: infinite;
+
+        }
+        .box4{
+            z-index: 2;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 38.8%;
+            bottom: 50%;
+            right: 50%;
+            margin: auto;
+            width: 350px;
+            height: 350px;
+            animation-name: my-animation4;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            background: radial-gradient(#2f1d70 66%,#230d69 90%);
+        }
+        .box5{
+            z-index: 1;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 38.8%;
+            bottom: 50%;
+            right: 50%;
+            margin: auto;
+            width: 350px;
+            height: 350px;
+            background: radial-gradient(#110a2c 66%,#0c0427 90%);
+        }
+        @keyframes my-animation1 {
                 0% {
+            z-index: 1;
             transform:rotate(0deg);
-            filter:drop-shadow(0 0 25px #55fb9f);
-            background: radial-gradient(#0a041d 60%,#55fb9f 60%,#fb5dad,#b97aff);
+            box-shadow:0 25px 65px 30px #55fb9f;
+            background: linear-gradient(#fb5dad,#55fb9f,#b97aff);
                 }
                 33%{
             transform:rotate(120deg);
-            filter: drop-shadow(0 0 25px #fb5dad);
-            background: radial-gradient(#0a041f 60%,#55fb9f 60%,#fb5dad,#b97aff);
+            box-shadow:25px 0 65px 30px #55fb9f;
+            background: linear-gradient(#fb5dad,#55fb9f,#b97aff);
                 }
                 66%{
             transform:rotate(240deg);
-            filter: drop-shadow(0 0 25px #b97aff);
-            background: radial-gradient(#0c0624 60%,#55fb9f 60%,#fb5dad,#b97aff);
+            box-shadow:0px -25px 65px 30px #55fb9f;
+            background: linear-gradient(#fb5dad,#55fb9f,#b97aff);
+                }
+                100%{
+            z-index: 1;
+            transform:rotate(360deg);
+            box-shadow:-25px 0px 65px 30px #55fb9f;
+            background: linear-gradient(#fb5dad,#55fb9f,#b97aff);
+                }
+            }
+            @keyframes my-animation2 {
+                0% {
+            z-index: 1;
+            transform:rotate(0deg);
+            box-shadow:25px 0px 100px 25px #fb5dad;
+            background: linear-gradient(#fb5dad,#55fb9f,#b97aff);
+                }
+                33%{
+            transform:rotate(120deg);
+            box-shadow:0px 25px 100px 25px #fb5dad;
+            background: linear-gradient(#fb5dad,#55fb9f,#b97aff);
+                }
+                66%{
+            transform:rotate(240deg);
+            box-shadow:-25px 0px 100px 25px #fb5dad;
+            background: linear-gradient(#fb5dad,#55fb9f,#b97aff);
                 }
                 100%{
             transform:rotate(360deg);
-            filter: drop-shadow(0 0 25px #55fb9f);
-            background: radial-gradient(#0c0525 60%,#55fb9f 60%,#fb5dad,#b97aff);
+            box-shadow:0px -25px 100px 25px #fb5dad;
+            background: linear-gradient(#fb5dad,#55fb9f,#b97aff);
+                }
+            }
+            @keyframes my-animation3 {
+                0% {
+            z-index: 1;
+            transform:rotate(0deg);
+            box-shadow:0 -25px 100px 25px #b97aff;
+            background: linear-gradient(#fb5dad,#55fb9f,#b97aff);
+                }
+                33%{
+            transform:rotate(120deg);
+            box-shadow:-25px 0 100px 25px #b97aff;
+            background: linear-gradient(#fb5dad,#55fb9f,#b97aff);
+                }
+                66%{
+            transform:rotate(240deg);
+            box-shadow:0 25px 100px 25px #b97aff;
+            background: linear-gradient(#fb5dad,#55fb9f,#b97aff);
+                }
+                100%{
+            z-index: 1;
+            transform:rotate(360deg);
+            box-shadow:25px 0 100px 25px #b97aff;
+            background: linear-gradient(#fb5dad,#55fb9f,#b97aff);
+                }
+            }
+            @keyframes my-animation4 {
+                0% {
+                    transform:scale(5%,5%);
+                }
+                100%{
+                    transform:scale(100%,100%);
                 }
             }
     </style>
 </head>
 <body>
-    <div class="box"></div>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
 </body>
 </html>
